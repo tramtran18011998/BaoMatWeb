@@ -95,7 +95,7 @@ public class HoaDonServlet extends HttpServlet {
 
 		hdDAO.insertHD(hd);
 
-		response.sendRedirect("/Version3/HoaDonServlet");
+		response.sendRedirect("/HoaDonServlet");
 
 	}
 

@@ -77,7 +77,7 @@ public class SanPhamServlet extends HttpServlet {
 		String maSP = (request.getParameter("maSP"));
 
 		SPDAO.deleteLoaiSP(maSP);
-		response.sendRedirect("/FastFood/SanPhamServlet");
+		response.sendRedirect("/SanPhamServlet");
 
 	}
 
@@ -116,7 +116,7 @@ public class SanPhamServlet extends HttpServlet {
 		sp.setMaLoai(request.getParameter("selectMaLoai"));
 
 		SPDAO.updateSP(sp);
-		response.sendRedirect("/FastFood/SanPhamServlet");
+		response.sendRedirect("/SanPhamServlet");
 
 	}
 
@@ -166,7 +166,7 @@ public class SanPhamServlet extends HttpServlet {
 		sp.setMaLoai(request.getParameter("selectMaLoai"));
 
 		SPDAO.insertSP(sp);
-		response.sendRedirect("/FastFood/SanPhamServlet");
+		response.sendRedirect("/SanPhamServlet");
 
 	}
 

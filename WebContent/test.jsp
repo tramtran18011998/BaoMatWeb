@@ -60,10 +60,10 @@
 
 
 						<li class="nav-item"><a class="nav-link"
-							href="/FastFood/ThucDon">Thực đơn </a></li>
+							href="/ThucDon">Thực đơn </a></li>
 
 						
-						<li class="nav-item"><a class="nav-link" href="/FastFood/TinKMServlet/showKM">Khuyến
+						<li class="nav-item"><a class="nav-link" href="/TinKMServlet/showKM">Khuyến
 								mãi </a></li>
 						<li class="nav-item"><a class="nav-link" href="TinTuc.jsp">Tin
 								tức </a></li>
@@ -78,7 +78,7 @@
 			<c:if test="${tenDN!=null}">
 				<p>
 					Hello <strong><%=session.getAttribute("tenDN")%></strong> | <a
-						href="/FastFood/LogoutServlet"><i class="fa fa-pencil"></i>
+						href="/LogoutServlet"><i class="fa fa-pencil"></i>
 						Đăng Xuất</a>
 				</p>
 			</c:if>
@@ -265,10 +265,10 @@
 			}
 		%> --%>
 		<div class="container">
-			<a href="/FastFood/ThucDon">testThucDon</a>
+			<a href="/ThucDon">testThucDon</a>
 			<section class="showFood">
 				<h3>GÀ RÁN + GÀ QUAY</h3>
-				<form method="post" class="form-inline" action="/FastFood/ThucDon">
+				<form method="post" class="form-inline" action="/ThucDon">
 
 
 
@@ -316,7 +316,7 @@
 							<div class="card">
 								<div class="card-img-top">
 									<img
-										src="http://localhost:8080/FastFood/LoadHinh?maSP=${SP.getMaSP() }"
+										src="http://localhost:8080/LoadHinh?maSP=${SP.getMaSP() }"
 										height="200" alt="Card image Not found">
 								</div>
 
@@ -355,7 +355,7 @@
 									<p></p>
 									<div>
 										<a
-											href="/FastFood/CartServlet?command=plus&maSP=
+											href="/CartServlet?command=plus&maSP=
 											<c:out value="${SP.getMaSP()}" />"
 											class="btn btn-primary">ĐẶT MUA</a>
 

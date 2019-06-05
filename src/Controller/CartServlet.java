@@ -65,7 +65,7 @@ public class CartServlet extends HttpServlet {
 
 		}
 		session.setAttribute("cart", cart);
-		response.sendRedirect("/FastFood/ThucDon");
+		response.sendRedirect("/ThucDon");
 		
 	}
 

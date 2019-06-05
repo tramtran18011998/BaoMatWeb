@@ -160,18 +160,18 @@
 									<td><c:out value="${tinkm.tieuDe}" /></td>
 									<td><c:out value="${tinkm.noiDung}" /></td>
 									<td><img alt="Not found"
-										src="http://localhost:8080/FastFood/LoadHinhTinKM?maTKM=${tinkm.getMaTKM() }"
+										src="http://localhost:8080/LoadHinhTinKM?maTKM=${tinkm.getMaTKM() }"
 										width="100px" height="100px"></td>
 
 
 									<td width="75px"><a
-										href="/FastFood/TinKMServlet/edit?maTKM=<c:out value="${tinkm.getMaTKM()}" />"
+										href="/TinKMServlet/edit?maTKM=<c:out value="${tinkm.getMaTKM()}" />"
 										class="edit"> <span class="glyphicon glyphicon-edit"></span></a>
 										
 								
 										
 										<a
-										href="/FastFood/TinKMServlet/delete?maTKM=<c:out value="${tinkm.getMaTKM()}" />"
+										href="/TinKMServlet/delete?maTKM=<c:out value="${tinkm.getMaTKM()}" />"
 										class="delete"> <span
 											class="glyphicon glyphicon-remove-sign"></span>
 									</a></td>
@@ -195,11 +195,11 @@
 
 					<c:if test="${tinKhuyenMai == null }">
 						<form enctype="multipart/form-data" method="post"
-							action="/FastFood/TinKMServlet/insert">
+							action="/TinKMServlet/insert">
 					</c:if>
 					<c:if test="${tinKhuyenMai != null }">
 						<form enctype="multipart/form-data" method="post"
-							action="/FastFood/TinKMServlet/update">
+							action="/TinKMServlet/update">
 					</c:if>
 					<!-- The Modal THEM-->
 					<div class="modal fade" id="myModal">

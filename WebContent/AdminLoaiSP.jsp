@@ -117,10 +117,10 @@
 									<td><c:out value="${loaisp.getMaLoai()}" /></td>
 									<td><c:out value="${loaisp.getTenLoaiSP()}" /></td>
 									<td width="75px"><a
-										href="/FastFood/LoaiSPServlet/edit?maLoai=<c:out value="${loaisp.getMaLoai()}" />"
+										href="/LoaiSPServlet/edit?maLoai=<c:out value="${loaisp.getMaLoai()}" />"
 										class="edit"> <span class="glyphicon glyphicon-edit"></span></a>
 										<a
-										href="/FastFood/LoaiSPServlet/delete?maLoai=<c:out value="${loaisp.getMaLoai()}" />"
+										href="/LoaiSPServlet/delete?maLoai=<c:out value="${loaisp.getMaLoai()}" />"
 										class="delete"> <span
 											class="glyphicon glyphicon-remove-sign"></span>
 									</a></td>
@@ -150,10 +150,10 @@
 				</div>
 
 				<c:if test="${loaiSanPham == null }">
-					<form method="post" action="/FastFood/LoaiSPServlet/insert">
+					<form method="post" action="/LoaiSPServlet/insert">
 				</c:if>
 				<c:if test="${loaiSanPham != null }">
-					<form method="post" action="/FastFood/LoaiSPServlet/update">
+					<form method="post" action="/LoaiSPServlet/update">
 				</c:if>
 
 				<!-- The Modal THEM-->

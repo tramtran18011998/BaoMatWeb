@@ -137,7 +137,7 @@
 								<td><c:out value="${kh.tichLuy}" /></td>
 
 								<td><a
-									href="/FastFood/KhachHangServlet/delete?maKH=<c:out value='${kh.maKH}' />"
+									href="/KhachHangServlet/delete?maKH=<c:out value='${kh.maKH}' />"
 									class="delete"> <span
 										class="glyphicon glyphicon-remove-sign"></span>
 								</a></td>

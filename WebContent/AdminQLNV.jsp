@@ -148,10 +148,10 @@
 								<td><c:out value="${nv.getSdt()} " /></td>
 								<td><c:out value="${nv.getTenDN()} " /></td>
 								<td><a
-									href="/FastFood/NhanVienServlet/edit?maNV=<c:out value="${nv.getMaNV()}" />"
+									href="/NhanVienServlet/edit?maNV=<c:out value="${nv.getMaNV()}" />"
 									class="edit"> <span class="glyphicon glyphicon-edit"></span></a>
 									<a
-									href="/FastFood/NhanVienServlet/delete?maNV=<c:out value="${nv.getMaNV()}" />"
+									href="/NhanVienServlet/delete?maNV=<c:out value="${nv.getMaNV()}" />"
 									class="delete"> <span
 										class="glyphicon glyphicon-remove-sign"></span>
 								</a></td>
@@ -210,10 +210,10 @@
 				</div>
 
 				<c:if test="${nhanVien == null }">
-					<form method="post" action="/FastFood/NhanVienServlet/insert">
+					<form method="post" action="/NhanVienServlet/insert">
 				</c:if>
 				<c:if test="${nhanVien != null }">
-					<form method="post" action="/FastFood/NhanVienServlet/update">
+					<form method="post" action="/NhanVienServlet/update">
 				</c:if>
 				<!--Themnhanvien-->
 				<div class="modal fade" id="myModal">

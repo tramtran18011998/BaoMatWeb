@@ -104,7 +104,7 @@ public class LoaiSPServlet extends HttpServlet {
 
 		loaiSPDAO.insertLoaiSP(lSP);
 
-		response.sendRedirect("/FastFood/LoaiSPServlet");
+		response.sendRedirect("/LoaiSPServlet");
 
 	}
 
@@ -151,7 +151,7 @@ public class LoaiSPServlet extends HttpServlet {
 		lSP.setMaLoai(request.getParameter("txtMaLoai"));
 		lSP.setTenLoaiSP(request.getParameter("txtTenLoaiSP"));
 		loaiSPDAO.updateLoaiSP(lSP);
-		response.sendRedirect("/FastFood/LoaiSPServlet");
+		response.sendRedirect("/LoaiSPServlet");
 	}
 
 	private void deleteLoaiSP(HttpServletRequest request, HttpServletResponse response)
@@ -165,7 +165,7 @@ public class LoaiSPServlet extends HttpServlet {
 
 			e.printStackTrace();
 		}
-		response.sendRedirect("/FastFood/LoaiSPServlet");
+		response.sendRedirect("/LoaiSPServlet");
 
 		/*
 		 * String url = request.getContextPath() + "/LoaiSPServlet";

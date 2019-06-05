@@ -105,7 +105,7 @@ public class NhanVienServlet extends HttpServlet {
 
 		nvDAO.insertNV(nv);
 		System.out.println("loi");
-		response.sendRedirect("/FastFood/NhanVienServlet");
+		response.sendRedirect("/NhanVienServlet");
 
 	}
 
@@ -154,7 +154,7 @@ public class NhanVienServlet extends HttpServlet {
 		nv.setTenDN(request.getParameter("tenDN").toString());
 
 		nvDAO.updateNV(nv);
-		response.sendRedirect("/FastFood/NhanVienServlet");
+		response.sendRedirect("/NhanVienServlet");
 
 	}
 

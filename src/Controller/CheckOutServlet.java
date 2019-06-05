@@ -77,7 +77,7 @@ public class CheckOutServlet extends HttpServlet {
 		}
 		cart =new Cart();
 		session.setAttribute("cart", cart);
-		response.sendRedirect("/FastFood/TrangChu.jsp");
+		response.sendRedirect("/TrangChu.jsp");
 	}
 
 }

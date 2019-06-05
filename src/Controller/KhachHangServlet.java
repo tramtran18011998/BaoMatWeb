@@ -121,7 +121,7 @@ public class KhachHangServlet extends HttpServlet {
 		khDAO.insertKH(kh);
 
 		System.out.println("loi");
-		response.sendRedirect("/FastFood/TrangChu.jsp");
+		response.sendRedirect("/TrangChu.jsp");
 
 	}
 
@@ -136,7 +136,7 @@ public class KhachHangServlet extends HttpServlet {
 		khDAO.deleteKH(kh);
 //		accDAO.deleteACC(acc);
 
-		response.sendRedirect("/FastFood/KhachHangServlet");
+		response.sendRedirect("/KhachHangServlet");
 	}
 
 }

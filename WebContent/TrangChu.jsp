@@ -66,14 +66,14 @@
 							<a class="nav-link" href="TrangChu.jsp">Trang chủ</a>
 						</li>
 						<li class="nav-item"><a class="nav-link"
-							href="/FastFood/ThucDon">Thực đơn </a></li>
+							href="/ThucDon">Thực đơn </a></li>
 
 						<!-- <li class="nav-item dropdown"><a
 							class="nav-link dropdown-toggle" href="#" id="dropdownId"
 							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Thực
 								đơn</a> <a class="nav-link"  href="ThucDon.html">Thực đơn</a>
 							<div class="dropdown-menu" aria-labelledby="dropdownId">
-								<a class="dropdown-item" href="/FastFood/ThucDon">**</a> <a
+								<a class="dropdown-item" href="/ThucDon">**</a> <a
 									class="dropdown-item" href="Ga.html">Gà rán + Gà quay</a> <a
 									class="dropdown-item" href="Hamburger.html">Hamburger</a> <a
 									class="dropdown-item" href="DoAnNhe.html">Đồ ăn nhẹ</a> <a
@@ -81,7 +81,7 @@
 									miệng + Thức uống</a>
 							</div></li> -->
 						<li class="nav-item"><a class="nav-link"
-							href="/FastFood/TinKMServlet/showKM">Khuyến mãi </a></li>
+							href="/TinKMServlet/showKM">Khuyến mãi </a></li>
 						<li class="nav-item"><a class="nav-link" href="TinTuc.jsp">Tin
 								tức </a></li>
 					</ul>
@@ -100,7 +100,7 @@
 			<c:if test="${tenDN!=null}">
 				<p>
 					Hello <strong><%=session.getAttribute("tenDN")%></strong> | <a
-						href="/FastFood/LogoutServlet"><i class="fa fa-pencil"></i>
+						href="/LogoutServlet"><i class="fa fa-pencil"></i>
 						Đăng Xuất</a>
 				</p>
 			</c:if>
@@ -142,7 +142,7 @@
 
 		<div class="container">
 
-			<!-- <form action="/FastFood/AccountServlet" method="post">
+			<!-- <form action="/AccountServlet" method="post">
 				<div class="modal fade" id="myModal">
 
 					<div class="modal-dialog modal-dialog-centered ">
@@ -195,7 +195,7 @@
 			</form> -->
 			<!-- ddawng kys nek  -->
 
-			<form action="/FastFood/KhachHangServlet/insert" method="post">
+			<form action="/KhachHangServlet/insert" method="post">
 				<div class="modal fade" id="myModal1">
 					<div class="modal-dialog modal-dialog-centered">
 						<div class="modal-content">
@@ -410,7 +410,7 @@
 								<h4 class="card-title" style="margin-bottom: 40px;">Burger
 									Gà</h4>
 								<p class="card-text">Giá : 30.000đ</p>
-								<a href="/FastFood/ThucDon" class="btn btn-primary">MÓN KHÁC</a>
+								<a href="/ThucDon" class="btn btn-primary">MÓN KHÁC</a>
 							</div>
 						</div>
 					</div>
@@ -420,7 +420,7 @@
 							<div class="card-body">
 								<h4 class="card-title">Combo gà giòn cay(3 miếng)</h4>
 								<p class="card-text">Giá : 85.000đ</p>
-								<a href="/FastFood/ThucDon" class="btn btn-primary">MÓN KHÁC</a>
+								<a href="/ThucDon" class="btn btn-primary">MÓN KHÁC</a>
 							</div>
 						</div>
 					</div>
@@ -432,7 +432,7 @@
 							<div class="card-body">
 								<h4 class="card-title">Combo gà sốt cam (6 miếng)</h4>
 								<p class="card-text">Giá : 160.000đ</p>
-								<a href="/FastFood/ThucDon" class="btn btn-primary">MÓN KHÁC</a>
+								<a href="/ThucDon" class="btn btn-primary">MÓN KHÁC</a>
 							</div>
 						</div>
 					</div>

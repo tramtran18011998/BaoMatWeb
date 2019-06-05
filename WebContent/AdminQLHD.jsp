@@ -122,11 +122,11 @@
 								<td><c:out value="${hd.tongTien}" /></td>
 								<td><c:out value="${hd.trangThai}" /></td>
 								<td width="120px"><a
-									<%-- href="/FastFood/LoaiSPServlet/edit?maLoai=<c:out value="${loaisp.getMaLoai()}" />" --%>
+									<%-- href="/LoaiSPServlet/edit?maLoai=<c:out value="${loaisp.getMaLoai()}" />" --%>
 										class="edit">
 										<span class="glyphicon glyphicon-edit"></span>
 								</a> <a
-									href="/FastFood/HoaDonServlet/delete?maHD=<c:out value="${hd.maHD}" />"
+									href="/HoaDonServlet/delete?maHD=<c:out value="${hd.maHD}" />"
 									class="delete"> <span
 										class="glyphicon glyphicon-remove-sign"></span>
 								</a></td>
@@ -354,7 +354,7 @@
 							</div>
 							<div class="modal-footer">
 								<button type="button" class="btn btn-primary"
-									href="/FastFood/HoaDonServlet/delete?maHD=<c:out value="${hoaDon.getMaHD()}" />">Có</button>
+									href="/HoaDonServlet/delete?maHD=<c:out value="${hoaDon.getMaHD()}" />">Có</button>
 								<button type="button" class="btn btn-default"
 									data-dismiss="modal">Không</button>
 							</div>

@@ -121,7 +121,7 @@
 						<h1>Quản lý sản phẩm</h1>
 					</div>
 					<form method="post" class="form-inline"
-						action="/FastFood/SanPhamServlet">
+						action="/SanPhamServlet">
 						<nav class="collapse navbar-collapse navbar-ex1-collapse">
 							<div class="breadcrumb">
 								<div class="topnav-right">
@@ -188,7 +188,7 @@
 									<td><c:out value="${SP.getGiaBan()}" /></td>
 									<td><c:out value="${SP.getKhuyenMai()}" /></td>
 									<td><img alt="Not found"
-										src="http://localhost:8080/FastFood/LoadHinh?maSP=${SP.getMaSP() }"
+										src="http://localhost:8080/LoadHinh?maSP=${SP.getMaSP() }"
 										width="100px" height="100px"></td>
 
 
@@ -203,10 +203,10 @@
 
 
 									<td width="75px"><a
-										href="/FastFood/SanPhamServlet/edit?maSP=<c:out value="${SP.getMaSP()}" />"
+										href="/SanPhamServlet/edit?maSP=<c:out value="${SP.getMaSP()}" />"
 										class="edit"> <span class="glyphicon glyphicon-edit"></span></a>
 										<a
-										href="/FastFood/SanPhamServlet/delete?maSP=<c:out value="${SP.getMaSP()}" />"
+										href="/SanPhamServlet/delete?maSP=<c:out value="${SP.getMaSP()}" />"
 										class="delete"> <span
 											class="glyphicon glyphicon-remove-sign"></span>
 									</a></td>
@@ -231,11 +231,11 @@
 
 					<c:if test="${sanPham == null }">
 						<form enctype="multipart/form-data" method="post"
-							action="/FastFood/SanPhamServlet/insert">
+							action="/SanPhamServlet/insert">
 					</c:if>
 					<c:if test="${sanPham != null }">
 						<form enctype="multipart/form-data" method="post"
-							action="/FastFood/SanPhamServlet/update">
+							action="/SanPhamServlet/update">
 					</c:if>
 					<!-- The Modal THEM-->
 					<div class="modal fade" id="myModal">

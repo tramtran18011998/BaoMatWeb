@@ -54,15 +54,15 @@
 					id="collapsibleNavId"
 					style="margin-top: 80px; margin-right: -15px;">
 					<ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
-						<li class="nav-item"><a class="nav-link" href="/FastFood/./TrangChu.jsp">Trang
+						<li class="nav-item"><a class="nav-link" href="./TrangChu.jsp">Trang
 								chủ</a></li>
 
 
 						<li class="nav-item"><a class="nav-link"
-							href="/FastFood/ThucDon">Thực đơn </a></li>
+							href="/ThucDon">Thực đơn </a></li>
 						<li class="nav-item main_page"><a class="nav-link"
 							href="TinKMServlet/showKM">Khuyến mãi </a></li>
-						<li class="nav-item"><a class="nav-link" href="/FastFood/./TinTuc.jsp">Tin
+						<li class="nav-item"><a class="nav-link" href="./TinTuc.jsp">Tin
 								tức </a></li>
 					</ul>
 
@@ -80,7 +80,7 @@
 			<c:if test="${tenDN!=null}">
 				<p>
 					Hello <strong><%=session.getAttribute("tenDN")%></strong> | <a
-						href="/FastFood/LogoutServlet"><i class="fa fa-pencil"></i>
+						href="/LogoutServlet"><i class="fa fa-pencil"></i>
 						Đăng Xuất</a>
 				</p>
 			</c:if>
@@ -426,7 +426,7 @@
 							<div class="card" style="margin-bottom: 20px; height: 670px;">
 
 								<img alt="Not found"
-									src="http://localhost:8080/FastFood/LoadHinhTinKM?maTKM=${tinkm.getMaTKM() }"
+									src="http://localhost:8080/LoadHinhTinKM?maTKM=${tinkm.getMaTKM() }"
 									width="489px" height="300px">
 								<h4>
 									<c:out value="${tinkm.tieuDe}" />
@@ -458,7 +458,7 @@
 		<!-- form show tin km -->
 
 		<c:if test="${tinKhuyenMai != null }">
-			<form method="post" action="/FastFood/TinKMServlet/showKM">
+			<form method="post" action="/TinKMServlet/showKM">
 		</c:if>
 		<div class="container">
 			<div class="viewmoreKM">

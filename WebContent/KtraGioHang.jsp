@@ -70,11 +70,11 @@
 
 
 						<li class="nav-item"><a class="nav-link"
-							href="/FastFood/ThucDon">Thực đơn </a></li>
+							href="/ThucDon">Thực đơn </a></li>
 
 
 						<li class="nav-item"><a class="nav-link"
-							href="/FastFood/TinKMServlet/showKM">Khuyến mãi </a></li>
+							href="/TinKMServlet/showKM">Khuyến mãi </a></li>
 						<li class="nav-item"><a class="nav-link" href="TinTuc.jsp">Tin
 								tức </a></li>
 					</ul>
@@ -93,7 +93,7 @@
 			<c:if test="${tenDN!=null}">
 				<p>
 					Hello <strong><%=session.getAttribute("tenDN")%></strong> | <a
-						href="/FastFood/LogoutServlet"><i class="fa fa-pencil"></i>
+						href="/LogoutServlet"><i class="fa fa-pencil"></i>
 						Đăng Xuất</a>
 				</p>
 			</c:if>
@@ -382,7 +382,7 @@
 									</script>  -->
 
 									<td><a
-										href="/FastFood/CartServlet?command=remove&maSP=<%=list.getValue().getProduct().getMaSP()%>"><i
+										href="/CartServlet?command=remove&maSP=<%=list.getValue().getProduct().getMaSP()%>"><i
 											class="fa fa-trash"></i></a></td>
 								</tr>
 								<%
@@ -523,7 +523,7 @@
 									</script>  -->
 
 									<td><a
-										href="/FastFood/CartServlet?command=remove&maSP=<%=list.getValue().getProduct().getMaSP()%>"><i
+										href="/CartServlet?command=remove&maSP=<%=list.getValue().getProduct().getMaSP()%>"><i
 											class="fa fa-trash"></i></a></td>
 								</tr>
 
@@ -542,7 +542,7 @@
 						<!-- <div>
 								<span> MaKH </span> <input type="text" name="maKH">
 							</div> -->
-						<form action="/FastFood/CheckOutServlet" method="post">
+						<form action="/CheckOutServlet" method="post">
 							<span class="tongThanhtoan">
 								<h5>TỔNG THANH TOÁN</h5>
 								<h4><%=cart.totalCart()%></h4> <!-- <button class="btn btn-success" type="submit"
