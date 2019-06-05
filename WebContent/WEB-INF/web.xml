@@ -3,18 +3,20 @@
   <display-name>FastFood</display-name>
   <context-param>
     <param-name>jdbcURL</param-name>
-    <!-- <param-value>jdbc:sqlserver://localhost;database=WebFastFood_DoAn;user=Tram;password=123;</param-value> -->
+     <!-- <param-value>jdbc:sqlserver://localhost;database=WebFastFood_DoAn;user=Tram;password=123;</param-value>  -->
     <param-value>jdbc:sqlserver://den1.mssql8.gear.host;database=fastfooddata;user=fastfooddata;password=Aa@123456;</param-value>
     
     
   </context-param>
   <context-param>
     <param-name>jdbcUsername</param-name>
-    <param-value>fastfooddata</param-value>
+    <param-value>fastfooddata</param-value> 
+    <!-- <param-value>Tram</param-value> -->
   </context-param>
   <context-param>
     <param-name>jdbcPassword</param-name>
     <param-value>Aa@123456</param-value>
+    <!-- <param-value>123</param-value> -->
   </context-param>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
@@ -22,6 +24,6 @@
     <welcome-file>index.jsp</welcome-file>
     <welcome-file>default.html</welcome-file>
     <welcome-file>default.htm</welcome-file>
-    <welcome-file>SanPhamServlet</welcome-file>
+    <welcome-file>TrangChu.jsp</welcome-file>
   </welcome-file-list>
 </web-app>
