@@ -160,7 +160,7 @@
 									<td><c:out value="${tinkm.tieuDe}" /></td>
 									<td><c:out value="${tinkm.noiDung}" /></td>
 									<td><img alt="Not found"
-										src="http://localhost:8080/LoadHinhTinKM?maTKM=${tinkm.getMaTKM() }"
+										src="https://nhom15fastfood.herokuapp.com/LoadHinhTinKM?maTKM=${tinkm.getMaTKM() }"
 										width="100px" height="100px"></td>
 
 

@@ -316,7 +316,7 @@
 							<div class="card">
 								<div class="card-img-top">
 									<img
-										src="http://localhost:8080/LoadHinh?maSP=${SP.getMaSP() }"
+										src="https://nhom15fastfood.herokuapp.com/LoadHinh?maSP=${SP.getMaSP() }"
 										height="200" alt="Card image Not found">
 								</div>
 
