@@ -250,7 +250,7 @@
 		</div>
 
 		<div class="tieude">
-			<img src="./img/openGa.jpg">
+			<img src="./img/familychicOrange.jpg">
 
 		</div>
 
