@@ -54,7 +54,7 @@
 					id="collapsibleNavId"
 					style="margin-top: 80px; margin-right: -15px;">
 					<ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
-						<li class="nav-item"><a class="nav-link" href="./TrangChu.jsp">Trang
+						<li class="nav-item"><a class="nav-link" href="../TrangChu.jsp">Trang
 								chủ</a></li>
 
 
@@ -62,7 +62,7 @@
 							href="/ThucDon">Thực đơn </a></li>
 						<li class="nav-item main_page"><a class="nav-link"
 							href="TinKMServlet/showKM">Khuyến mãi </a></li>
-						<li class="nav-item"><a class="nav-link" href="./TinTuc.jsp">Tin
+						<li class="nav-item"><a class="nav-link" href="../TinTuc.jsp">Tin
 								tức </a></li>
 					</ul>
 
@@ -86,7 +86,7 @@
 			</c:if>
 			<c:if test="${tenDN==null}">
 
-				<a href="Login.jsp" id="dangNhap"><i class="fa fa-user"></i>
+				<a href="../Login.jsp" id="dangNhap"><i class="fa fa-user"></i>
 					Đăng Nhập</a> | <a href="#" data-toggle="modal" data-target="#myModal1"
 					id="dangKy"><i class="fa fa-pencil"></i> Đăng Ký</a>
 				</p>
