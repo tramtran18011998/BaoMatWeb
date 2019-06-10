@@ -1,4 +1,4 @@
-<%@page import="org.apache.jasper.tagplugins.jstl.core.Remove"%>
+<%-- <%@page import="org.apache.jasper.tagplugins.jstl.core.Remove"%> --%>
 <%@page import="Controller.CartServlet"%>
 <%@page import="Model.Item"%>
 <%@page import="java.util.Map"%>
